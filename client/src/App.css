@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.App{
+  width: 100vw;
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+align-items: center;
+font-family: 'Roboto', sans-serif;
+background-color: #9e579d;
+  
+}
+.join{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+align-items: center;
+border-radius: 12px;
+background-color: #581b98;
+box-shadow:
+  2.6px 13px 11px -2px rgba(0, 0, 0, 0.09),
+  21px 104px 88px -2px rgba(0, 0, 0, 0.18)
+;
+}
+.room-input{
+  width: 17rem;
+  padding: 8px 13px;
+  border-radius: 12px;
+}
+.room-button{
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  background-color: #9c1de7;
+  margin: 10px;
+  border-radius: 12px;
+
+}
+.msg{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  background-color: #581b98;
+ border-radius: 12px;
+  min-width: 50%;
+  height: 70%;
+  margin-right: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  box-shadow:
+  2.6px 13px 11px -2px rgba(0, 0, 0, 0.09),
+  21px 104px 88px -2px rgba(0, 0, 0, 0.18);
+}
+#container{
+  min-height: 60%;
+  min-width: 60%;
+  display: flex;
+  flex-direction:column-reverse ;
+  border-radius: 12px;
+  background-color: #9c1de7;
+  padding: 8px 2px;
+  overflow-y: scroll;
+  scroll-behavior:smooth;
+}
+.message-text{
+  padding: 8px 13px;
+  border-radius: 12px;
+  width: 27rem;
+}
+.message-button{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+.remessage{
+  width: 40%;
+  height: 1rem;
+  border-radius: 12px;
+  margin: 8px 2px;
+  padding: 8px 2px;
+  background-color: #f3558e;
+}
+.semessage{
+  width: 60%;
+  height: 1rem;
+  border-radius: 12px;
+  margin: 8px 2px;
+  padding: 8px 2px;
+  background-color:#faee1c;
+}
+.small-container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* @media only screen and (max-width:250px)  {
+  #container{
+    width:230px
+  }
+} */
+@keyframes slide-out-left{0%{transform:translateX(0);opacity:1}100%{transform:translateX(-1000px);opacity:0}}
+@keyframes slide-in-right{0%{transform:translateX(1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
